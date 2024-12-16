@@ -54,6 +54,9 @@ importers:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.15)
     devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:^
+        version: link:../../tooling/typescript-config
       '@types/node':
         specifier: ^20
         version: 20.17.9
@@ -78,6 +81,8 @@ importers:
       typescript:
         specifier: ^5
         version: 5.7.2
+
+  tooling/typescript-config: {}
 
 packages:
 
