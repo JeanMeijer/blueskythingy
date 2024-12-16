@@ -3,9 +3,13 @@
   "private": true,
   "version": "0.1.0",
   "devDependencies": {
+    "@repo/typescript-config": "workspace:^",
     "@types/node": "^20",
     "eslint": "^8",
-    "typescript": "^5",
-    "@repo/typescript-config": "workspace:^"
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@t3-oss/env-nextjs": "^0.11.1",
+    "zod": "^3.24.1"
   }
 }
