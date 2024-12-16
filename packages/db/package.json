@@ -1,0 +1,11 @@
+{
+  "name": "@repo/db",
+  "private": true,
+  "version": "0.1.0",
+  "devDependencies": {
+    "@types/node": "^20",
+    "eslint": "^8",
+    "typescript": "^5",
+    "@repo/typescript-config": "workspace:^"
+  }
+}
