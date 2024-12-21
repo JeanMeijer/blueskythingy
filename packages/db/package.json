@@ -25,5 +25,8 @@
     "drizzle-orm": "^0.38.2",
     "postgres": "^3.4.5",
     "zod": "^3.24.1"
+  },
+  "peerDependencies": {
+    "@atproto/oauth-client-node": "^0.2.4"
   }
 }
