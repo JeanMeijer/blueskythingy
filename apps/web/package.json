@@ -13,6 +13,8 @@
   "dependencies": {
     "@atproto/api": "^0.13.20",
     "@atproto/oauth-client-node": "^0.2.4",
+    "@hookform/resolvers": "^3.9.1",
+    "@next-safe-action/adapter-react-hook-form": "^1.0.13",
     "@radix-ui/react-dialog": "^1.1.4",
     "@radix-ui/react-label": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.1",
@@ -26,6 +28,7 @@
     "next-safe-action": "^7.10.2",
     "react": "19.0.0",
     "react-dom": "19.0.0",
+    "react-hook-form": "^7.54.2",
     "server-only": "^0.0.1",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
