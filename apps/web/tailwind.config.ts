@@ -12,6 +12,9 @@ export default {
       fontFamily: {
         sans: ["var(--font-sans)"],
       },
+      borderWidth: {
+        DEFAULT: "[var(--border-width)]",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
