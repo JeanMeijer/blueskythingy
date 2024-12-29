@@ -2,19 +2,33 @@ import { NodeOAuthClient, type OAuthClientMetadataInput } from "@atproto/oauth-c
 import { db } from "@repo/db";
 import { SessionStore } from "./session-store";
 import { StateStore } from "./state-store";
-import { BASE_URL } from "../base-url";
+import { env } from "@/env/server";
+
+function getClientUrl() {
+  if (env.VERCEL_ENV === "production") {
+    return `https://${env.VERCEL_PROJECT_PRODUCTION_URL}`;
+  }
+
+  if (env.VERCEL_URL) {
+    return `https://${env.VERCEL_URL}`;
+  }
+
+  return `https://${env.TUNNEL_URL}`;
+}
+
+export const CLIENT_URL = getClientUrl();
 
 export const CLIENT_METADATA: OAuthClientMetadataInput = {
-  "client_id": `${BASE_URL}/client-metadata.json`,
+  "client_id": `${CLIENT_URL}/client-metadata.json`,
   "application_type": "web",
   "client_name": "Blueskythingy",
-  "client_uri": BASE_URL,
+  "client_uri": CLIENT_URL,
   "grant_types": [
     "authorization_code",
     "refresh_token"
   ],
   "redirect_uris": [
-    `${BASE_URL}/api/oauth/callback`,
+    `${CLIENT_URL}/oauth/callback`,
   ],
   "response_types": [
     "code"
