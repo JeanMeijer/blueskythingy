@@ -8,6 +8,7 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
@@ -34,14 +35,14 @@ export function LoginForm() {
     <Dialog open={true} onOpenChange={() => router.push("/")}>
       <DialogContent className="mx-auto w-full max-w-md">
         <DialogHeader>
-          <DialogTitle className="">Login to Bluesky</DialogTitle>
-        </DialogHeader>
-        <form className="grid gap-4" onSubmit={handleSubmitWithAction}>
+          <DialogTitle>Sign in to Bluesky Thingy</DialogTitle>
           <DialogDescription>
-            Enter your Bluesky handle below to continue
+            You need to login with your Bluesky account to continue
           </DialogDescription>
+        </DialogHeader>
+        <form className="grid gap-4 px-6" onSubmit={handleSubmitWithAction}>
           <div className="grid gap-3">
-            <Label htmlFor="handle">Your Bluesky handle</Label>
+            <Label htmlFor="handle">Bluesky handle</Label>
             <Input
               id="handle"
               type="text"
@@ -73,6 +74,11 @@ export function LoginForm() {
             Login with Bluesky
           </Button>
         </form>
+        <DialogFooter className="sm:justify-center">
+          <p className="text-xs text-muted-foreground text-pretty text-center max-w-80 leading-relaxed">
+            By clicking on &#34;Login with Bluesky&#34;, you agree to our Terms of Service and Privacy Policy.
+          </p>
+        </DialogFooter>
       </DialogContent>
     </Dialog>
   );
