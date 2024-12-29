@@ -5,10 +5,10 @@
       "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
-    "web#build": {
+    "@repo/web#build": {
       "env": ["DATABASE_URL", "COOKIE_SECRET"]
     },
-    "db#build": {
+    "@repo/db#build": {
       "env": ["DATABASE_URL"]
     },
     "dev": {
