@@ -23,12 +23,16 @@ const inter = Inter({
 
 interface RootLayoutProps {
   children: ReactNode;
+  login: ReactNode;
 }
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout(props: RootLayoutProps) {
   return (
-    <html lang="en" className={`${inter.variable}`}>
-      <body className="antialiased">{children}</body>
+    <html lang="en" className={`${inter.variable} dark antialiased`}>
+      <body>
+        {props.children}
+        {props.login}
+      </body>
     </html>
   );
 }
