@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { CLIENT_METADATA } from "@/lib/bluesky/oauth-client";
+import { CLIENT_METADATA } from "@/lib/bluesky/client-metadata";
 
 export const runtime = "edge";
 

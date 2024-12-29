@@ -2,7 +2,8 @@
 
 import { redirect } from "next/navigation";
 import { publicAction } from "@/lib/safe-action";
-import { CLIENT_URL, oauthClient } from "@/lib/bluesky/oauth-client";
+import { oauthClient } from "@/lib/bluesky/oauth-client";
+import { CLIENT_URL } from "@/lib/bluesky/client-metadata";
 import { loginSchema } from "./schema";
 
 export const loginAction = publicAction
