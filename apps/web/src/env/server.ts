@@ -6,8 +6,10 @@ export const env = createEnv({
   server: {
     NODE_ENV: z.enum(["development", "production", "test"]),
     DATABASE_URL: z.string().url().startsWith("postgresql://"),
-    COOKIE_SECRET: z.string().min(32, "Iron session secret must be at least 32 characters long"),
-    TUNNEL_URL: z.string().url().optional(),
+    COOKIE_SECRET: z
+      .string()
+      .min(32, "Iron session secret must be at least 32 characters long"),
+    TUNNEL_URL: z.string().optional(),
   },
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
