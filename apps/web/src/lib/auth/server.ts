@@ -27,10 +27,10 @@ export async function auth() {
       isSignedIn: false,
       user: null,
       redirectToSignIn,
-    }
+    };
   }
 
-  return { 
+  return {
     isSignedIn: true,
     user: {
       did: clientSession.did,

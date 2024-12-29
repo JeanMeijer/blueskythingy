@@ -1,4 +1,3 @@
-
 import { NextResponse } from "next/server";
 import { CLIENT_METADATA } from "@/lib/bluesky/oauth-client";
 
