@@ -31,9 +31,17 @@ export function LoginForm() {
     },
   );
 
+  const preventDismiss = (event: Event) => {
+    if (form.getValues("handle").trim().length === 0) {
+      return;
+    }
+
+    event.preventDefault();
+  };
+
   return (
     <Dialog open={true} onOpenChange={() => router.push("/")}>
-      <DialogContent className="mx-auto w-full max-w-md">
+      <DialogContent className="mx-auto w-full max-w-md" onPointerDownOutside={preventDismiss}>
         <DialogHeader>
           <DialogTitle>Sign in to Bluesky Thingy</DialogTitle>
           <DialogDescription>
