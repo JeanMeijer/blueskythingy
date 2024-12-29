@@ -47,8 +47,8 @@ export default {
           foreground: "hsl(var(--destructive-foreground))",
         },
         bluesky: {
-          DEFAULT: 'hsl(var(--bluesky))',
-          foreground: 'hsl(var(--bluesky-foreground))'
+          DEFAULT: "hsl(var(--bluesky))",
+          foreground: "hsl(var(--bluesky-foreground))",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
