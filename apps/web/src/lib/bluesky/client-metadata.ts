@@ -24,5 +24,6 @@ export const CLIENT_METADATA: OAuthClientMetadataInput = {
   redirect_uris: [`${CLIENT_URL}/oauth/callback`],
   response_types: ["code"],
   scope: "atproto transition:generic",
+  dpop_bound_access_tokens: true,
   token_endpoint_auth_method: "none",
 };
