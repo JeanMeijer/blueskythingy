@@ -5,6 +5,12 @@
       "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
+    "web#build": {
+      "env": ["DATABASE_URL", "COOKIE_SECRET"]
+    },
+    "db#build": {
+      "env": ["DATABASE_URL"]
+    },
     "dev": {
       "persistent": true,
       "cache": false
