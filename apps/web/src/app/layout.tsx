@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Providers } from "./providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -30,8 +31,10 @@ export default function RootLayout(props: RootLayoutProps) {
   return (
     <html lang="en" className={`${inter.variable} dark antialiased`}>
       <body>
-        {props.children}
-        {props.login}
+        <Providers>
+          {props.children}
+          {props.login}
+        </Providers>
       </body>
     </html>
   );
