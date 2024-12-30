@@ -1,3 +1,4 @@
+import { unstable_cache, revalidateTag } from "next/cache";
 import { eq } from "drizzle-orm";
 import type {
   NodeSavedSession,
@@ -6,19 +7,28 @@ import type {
 import type { Database } from "@repo/db";
 import { oauthSession } from "@repo/db/schema";
 
+async function getSession(db: Database, key: string) {
+  const session = await db.query.oauthSession.findFirst({
+    where: eq(oauthSession.key, key),
+  });
+
+  if (!session) {
+    return;
+  }
+
+  return session.value;
+}
+
 export class SessionStore implements NodeSavedSessionStore {
   constructor(private db: Database) {}
 
   async get(key: string): Promise<NodeSavedSession | undefined> {
-    const session = await this.db.query.oauthSession.findFirst({
-      where: eq(oauthSession.key, key),
-    });
+    const getCachedSession = unstable_cache(
+      async (key: string) => getSession(this.db, key),
+      [`oauth.session:${key}`],
+    );
 
-    if (!session) {
-      return;
-    }
-
-    return session.value;
+    return await getCachedSession(key);
   }
 
   async set(key: string, val: NodeSavedSession) {
@@ -33,9 +43,13 @@ export class SessionStore implements NodeSavedSessionStore {
         target: oauthSession.key,
         set: { value: val, expiresAt: val.tokenSet.expires_at },
       });
+
+    revalidateTag(`oauth.session:${key}`);
   }
 
   async del(key: string) {
     await this.db.delete(oauthSession).where(eq(oauthSession.key, key));
+
+    revalidateTag(`oauth.session:${key}`);
   }
 }

@@ -1,3 +1,4 @@
+import { unstable_cache, revalidateTag } from "next/cache";
 import { eq } from "drizzle-orm";
 import type {
   NodeSavedState,
@@ -6,19 +7,31 @@ import type {
 import type { Database } from "@repo/db";
 import { oauthState } from "@repo/db/schema";
 
+async function getState(
+  db: Database,
+  key: string,
+): Promise<NodeSavedState | undefined> {
+  const state = await db.query.oauthState.findFirst({
+    where: eq(oauthState.key, key),
+  });
+
+  if (!state) {
+    return;
+  }
+
+  return state.value;
+}
+
 export class StateStore implements NodeSavedStateStore {
   constructor(private db: Database) {}
 
   async get(key: string): Promise<NodeSavedState | undefined> {
-    const state = await this.db.query.oauthState.findFirst({
-      where: eq(oauthState.key, key),
-    });
+    const getCachedState = unstable_cache(
+      async (key: string) => getState(this.db, key),
+      [`oauth.state:${key}`],
+    );
 
-    if (!state) {
-      return;
-    }
-
-    return state.value;
+    return await getCachedState(key);
   }
 
   async set(key: string, val: NodeSavedState) {
@@ -34,9 +47,13 @@ export class StateStore implements NodeSavedStateStore {
           value: val,
         },
       });
+
+    revalidateTag(`oauth.state:${key}`);
   }
 
   async del(key: string) {
     await this.db.delete(oauthState).where(eq(oauthState.key, key));
+
+    revalidateTag(`oauth.state:${key}`);
   }
 }
