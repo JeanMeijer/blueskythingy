@@ -7,7 +7,9 @@ interface CreateAuthenticatedClientParams {
   session: IronSession<Session>;
 }
 
-export async function createAuthenticatedClient(params: CreateAuthenticatedClientParams) {
+export async function createAuthenticatedClient(
+  params: CreateAuthenticatedClientParams,
+) {
   const oauthSession = await oauthClient.restore(params.session.did);
 
   if (!oauthSession) {

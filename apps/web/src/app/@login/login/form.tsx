@@ -41,7 +41,10 @@ export function LoginForm() {
 
   return (
     <Dialog open={true} onOpenChange={() => router.push("/")}>
-      <DialogContent className="mx-auto w-full max-w-md" onPointerDownOutside={preventDismiss}>
+      <DialogContent
+        className="mx-auto w-full max-w-md"
+        onPointerDownOutside={preventDismiss}
+      >
         <DialogHeader>
           <DialogTitle>Sign in to Bluesky Thingy</DialogTitle>
           <DialogDescription>
@@ -84,7 +87,8 @@ export function LoginForm() {
         </form>
         <DialogFooter className="sm:justify-center">
           <p className="text-xs text-muted-foreground text-pretty text-center max-w-80 leading-relaxed">
-            By clicking on &#34;Login with Bluesky&#34;, you agree to our Terms of Service and Privacy Policy.
+            By clicking on &#34;Login with Bluesky&#34;, you agree to our Terms
+            of Service and Privacy Policy.
           </p>
         </DialogFooter>
       </DialogContent>
