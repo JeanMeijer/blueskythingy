@@ -18,17 +18,17 @@ importers:
   apps/web:
     dependencies:
       '@atproto/api':
-        specifier: ^0.13.20
-        version: 0.13.20
+        specifier: ^0.13.25
+        version: 0.13.25
       '@atproto/oauth-client-node':
-        specifier: ^0.2.4
-        version: 0.2.4
+        specifier: ^0.2.5
+        version: 0.2.5
       '@hookform/resolvers':
-        specifier: ^3.9.1
-        version: 3.9.1(react-hook-form@7.54.2(react@19.0.0))
+        specifier: ^3.10.0
+        version: 3.10.0(react-hook-form@7.54.2(react@19.0.0))
       '@next-safe-action/adapter-react-hook-form':
         specifier: ^1.0.13
-        version: 1.0.13(@hookform/resolvers@3.9.1(react-hook-form@7.54.2(react@19.0.0)))(next-safe-action@7.10.2(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(valibot@1.0.0-beta.9(typescript@5.7.2))(zod@3.24.1))(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react-hook-form@7.54.2(react@19.0.0))(react@19.0.0)
+        version: 1.0.13(@hookform/resolvers@3.10.0(react-hook-form@7.54.2(react@19.0.0)))(next-safe-action@7.10.2(next@15.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(valibot@1.0.0-beta.10(typescript@5.7.2))(zod@3.24.1))(next@15.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react-hook-form@7.54.2(react@19.0.0))(react@19.0.0)
       '@radix-ui/react-dialog':
         specifier: ^1.1.4
         version: 1.1.4(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -45,8 +45,8 @@ importers:
         specifier: ^0.11.1
         version: 0.11.1(typescript@5.7.2)(zod@3.24.1)
       '@tanstack/react-query':
-        specifier: ^5.62.7
-        version: 5.62.7(react@19.0.0)
+        specifier: ^5.62.16
+        version: 5.62.16(react@19.0.0)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -54,20 +54,20 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       drizzle-orm:
-        specifier: ^0.38.2
-        version: 0.38.2(@types/react@18.3.12)(postgres@3.4.5)(react@19.0.0)
+        specifier: ^0.38.3
+        version: 0.38.3(@types/react@18.3.12)(postgres@3.4.5)(react@19.0.0)
       iron-session:
         specifier: ^8.0.4
         version: 8.0.4
       lucide-react:
-        specifier: ^0.468.0
-        version: 0.468.0(react@19.0.0)
+        specifier: ^0.469.0
+        version: 0.469.0(react@19.0.0)
       next:
-        specifier: 15.1.0
-        version: 15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: 15.1.3
+        version: 15.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       next-safe-action:
         specifier: ^7.10.2
-        version: 7.10.2(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(valibot@1.0.0-beta.9(typescript@5.7.2))(zod@3.24.1)
+        version: 7.10.2(next@15.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(valibot@1.0.0-beta.10(typescript@5.7.2))(zod@3.24.1)
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -81,14 +81,14 @@ importers:
         specifier: ^0.0.1
         version: 0.0.1
       tailwind-merge:
-        specifier: ^2.5.5
-        version: 2.5.5
+        specifier: ^2.6.0
+        version: 2.6.0
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.15)
       valibot:
-        specifier: 1.0.0-beta.9
-        version: 1.0.0-beta.9(typescript@5.7.2)
+        specifier: 1.0.0-beta.10
+        version: 1.0.0-beta.10(typescript@5.7.2)
       zod:
         specifier: ^3.24.1
         version: 3.24.1
@@ -133,8 +133,8 @@ importers:
         specifier: ^16.4.7
         version: 16.4.7
       drizzle-orm:
-        specifier: ^0.38.2
-        version: 0.38.2(@types/react@18.3.12)(postgres@3.4.5)(react@19.0.0)
+        specifier: ^0.38.3
+        version: 0.38.3(@types/react@18.3.12)(postgres@3.4.5)(react@19.0.0)
       postgres:
         specifier: ^3.4.5
         version: 3.4.5
@@ -181,11 +181,20 @@ packages:
   '@atproto-labs/handle-resolver-node@0.1.8':
     resolution: {integrity: sha512-AlH7qRtmhZFRCcv1HK9OYiZpTFGcX39zjzzANq42zVLlfqoJr3ugnv7mAXGHE8woVguKtbypHnrVCDceoBAs2w==}
 
+  '@atproto-labs/handle-resolver-node@0.1.9':
+    resolution: {integrity: sha512-chX/cB8xCIFdnJmL4MpMz6PIkryeEmR4iiPup7oSJekGW5kQCGWS6xauYJ5PGnLiSjit3Is0OT03H8m+3YUNrQ==}
+
   '@atproto-labs/handle-resolver@0.1.4':
     resolution: {integrity: sha512-tnGUD2mQ6c8xHs3eeVJgwYqM3FHoTZZbOcOGKqO1A5cuIG+gElwEhpWwpwX5LI7FF4J8eS9BOHLl3NFS7Q8QXg==}
 
+  '@atproto-labs/handle-resolver@0.1.5':
+    resolution: {integrity: sha512-3Uv5DUswmiUWn0oO3XML7T6RiM8aq+A4lACBRRasegsr6fytxATJE38UiwDmDRWdXxhftnPlmTWfJ2oZ/pqDWQ==}
+
   '@atproto-labs/identity-resolver@0.1.7':
     resolution: {integrity: sha512-aRmY0cp+aFDgxAD62jjCPUDJMqryuXmt0hK9ls8LHeSzszr58BFDwybLaW6Izz2KISQlzu75Ia0c6uRymdmcYA==}
+
+  '@atproto-labs/identity-resolver@0.1.8':
+    resolution: {integrity: sha512-gFJ97WcUVrQnhXD16HcTdNUqcT6oZd5tMEYwRxjAw1iPzU08P/CS9DnNv530wLIR4auutq/KpMyKzhZckjJuSA==}
 
   '@atproto-labs/pipe@0.1.0':
     resolution: {integrity: sha512-ghOqHFyJlQVFPESzlVHjKroP0tPzbmG5Jms0dNI9yLDEfL8xp4OFPWLX4f6T8mRq69wWs4nIDM3sSsFbFqLa1w==}
@@ -196,8 +205,8 @@ packages:
   '@atproto-labs/simple-store@0.1.1':
     resolution: {integrity: sha512-WKILW2b3QbAYKh+w5U2x6p5FqqLl0nAeLwGeDY+KjX01K4Dq3vQTR9b/qNp0jZm48CabPQVrqCv0PPU9LgRRRg==}
 
-  '@atproto/api@0.13.20':
-    resolution: {integrity: sha512-z/+CvG6BEttRHf856tKSe1AeUQNfrobRJldaHAthGmFk7O3wLZQyfcI9DUmBJQ9+4wAt0dZwvKWVGLZOV9eLHA==}
+  '@atproto/api@0.13.25':
+    resolution: {integrity: sha512-5tz2NvYO7W9+0PV7x4k4KIAIazQI6Km+q4/+O6VUoNSqHsF3ry9/9mjcZKBoJLdmcVtZdcKSlPUTtxthan6iKw==}
 
   '@atproto/common-web@0.3.1':
     resolution: {integrity: sha512-N7wiTnus5vAr+lT//0y8m/FaHHLJ9LpGuEwkwDAeV3LCiPif4m/FS8x/QOYrx1PdZQwKso95RAPzCGWQBH5j6Q==}
@@ -220,8 +229,14 @@ packages:
   '@atproto/oauth-client-node@0.2.4':
     resolution: {integrity: sha512-Uq5VG0nrFh9CPbfhjT4OEmcPiKfFSrvfoB1PM5lCkZoSiO/+trHPmzaxA+sszMvtd53pbYyeBgqn+gP0EF6jYw==}
 
+  '@atproto/oauth-client-node@0.2.5':
+    resolution: {integrity: sha512-xapkwIglriQhyufMFQylxuLdn/3yIi2j3wWTWz+5i9ndTlbYt4nv+OBV6q3oOZetAwQb45idGJflvTV8lRlcuA==}
+
   '@atproto/oauth-client@0.3.4':
     resolution: {integrity: sha512-dPvMstfzNvcbyWcQZBq56WLnJp/OwPT+OjJ2RsMfl8jXVXpgPdviv/k/ttt5TfOmkbc1G7/2JOIFaS27BvsXyw==}
+
+  '@atproto/oauth-client@0.3.5':
+    resolution: {integrity: sha512-Rr5GKP5YSO28ek1TbyrhO1HpOQYryVm/h9pgYDGzm1diq8kWHsH1se5p1wdFvyBh3Fd4WRw8IE++y2JIeTDkjA==}
 
   '@atproto/oauth-types@0.2.1':
     resolution: {integrity: sha512-hDisUXzcq5KU1HMuCYZ8Kcz7BePl7V11bFjjgZvND3mdSphiyBpJ8MCNn3QzAa6cXpFo0w9PDcYMAlCCRZHdVw==}
@@ -678,8 +693,8 @@ packages:
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@hookform/resolvers@3.9.1':
-    resolution: {integrity: sha512-ud2HqmGBM0P0IABqoskKWI6PEf6ZDDBZkFqe2Vnl+mTHCEHzr3ISjjZyCwTjC/qpL25JC9aIDkloQejvMeq0ug==}
+  '@hookform/resolvers@3.10.0':
+    resolution: {integrity: sha512-79Dv+3mDF7i+2ajj7SkypSKHhl1cbln1OGavqrsF7p6mbUv11xpqpacPsGDCTRvCSjEEIez2ef1NveSVL3b0Ag==}
     peerDependencies:
       react-hook-form: ^7.0.0
 
@@ -833,56 +848,56 @@ packages:
       react-dom: '>= 18.2.0'
       react-hook-form: '>= 7.0.0'
 
-  '@next/env@15.1.0':
-    resolution: {integrity: sha512-UcCO481cROsqJuszPPXJnb7GGuLq617ve4xuAyyNG4VSSocJNtMU5Fsx+Lp6mlN8c7W58aZLc5y6D/2xNmaK+w==}
+  '@next/env@15.1.3':
+    resolution: {integrity: sha512-Q1tXwQCGWyA3ehMph3VO+E6xFPHDKdHFYosadt0F78EObYxPio0S09H9UGYznDe6Wc8eLKLG89GqcFJJDiK5xw==}
 
   '@next/eslint-plugin-next@15.1.0':
     resolution: {integrity: sha512-+jPT0h+nelBT6HC9ZCHGc7DgGVy04cv4shYdAe6tKlEbjQUtwU3LzQhzbDHQyY2m6g39m6B0kOFVuLGBrxxbGg==}
 
-  '@next/swc-darwin-arm64@15.1.0':
-    resolution: {integrity: sha512-ZU8d7xxpX14uIaFC3nsr4L++5ZS/AkWDm1PzPO6gD9xWhFkOj2hzSbSIxoncsnlJXB1CbLOfGVN4Zk9tg83PUw==}
+  '@next/swc-darwin-arm64@15.1.3':
+    resolution: {integrity: sha512-aZtmIh8jU89DZahXQt1La0f2EMPt/i7W+rG1sLtYJERsP7GRnNFghsciFpQcKHcGh4dUiyTB5C1X3Dde/Gw8gg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@next/swc-darwin-x64@15.1.0':
-    resolution: {integrity: sha512-DQ3RiUoW2XC9FcSM4ffpfndq1EsLV0fj0/UY33i7eklW5akPUCo6OX2qkcLXZ3jyPdo4sf2flwAED3AAq3Om2Q==}
+  '@next/swc-darwin-x64@15.1.3':
+    resolution: {integrity: sha512-aw8901rjkVBK5mbq5oV32IqkJg+CQa6aULNlN8zyCWSsePzEG3kpDkAFkkTOh3eJ0p95KbkLyWBzslQKamXsLA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@next/swc-linux-arm64-gnu@15.1.0':
-    resolution: {integrity: sha512-M+vhTovRS2F//LMx9KtxbkWk627l5Q7AqXWWWrfIzNIaUFiz2/NkOFkxCFyNyGACi5YbA8aekzCLtbDyfF/v5Q==}
+  '@next/swc-linux-arm64-gnu@15.1.3':
+    resolution: {integrity: sha512-YbdaYjyHa4fPK4GR4k2XgXV0p8vbU1SZh7vv6El4bl9N+ZSiMfbmqCuCuNU1Z4ebJMumafaz6UCC2zaJCsdzjw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-arm64-musl@15.1.0':
-    resolution: {integrity: sha512-Qn6vOuwaTCx3pNwygpSGtdIu0TfS1KiaYLYXLH5zq1scoTXdwYfdZtwvJTpB1WrLgiQE2Ne2kt8MZok3HlFqmg==}
+  '@next/swc-linux-arm64-musl@15.1.3':
+    resolution: {integrity: sha512-qgH/aRj2xcr4BouwKG3XdqNu33SDadqbkqB6KaZZkozar857upxKakbRllpqZgWl/NDeSCBYPmUAZPBHZpbA0w==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-x64-gnu@15.1.0':
-    resolution: {integrity: sha512-yeNh9ofMqzOZ5yTOk+2rwncBzucc6a1lyqtg8xZv0rH5znyjxHOWsoUtSq4cUTeeBIiXXX51QOOe+VoCjdXJRw==}
+  '@next/swc-linux-x64-gnu@15.1.3':
+    resolution: {integrity: sha512-uzafnTFwZCPN499fNVnS2xFME8WLC9y7PLRs/yqz5lz1X/ySoxfaK2Hbz74zYUdEg+iDZPd8KlsWaw9HKkLEVw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-linux-x64-musl@15.1.0':
-    resolution: {integrity: sha512-t9IfNkHQs/uKgPoyEtU912MG6a1j7Had37cSUyLTKx9MnUpjj+ZDKw9OyqTI9OwIIv0wmkr1pkZy+3T5pxhJPg==}
+  '@next/swc-linux-x64-musl@15.1.3':
+    resolution: {integrity: sha512-el6GUFi4SiDYnMTTlJJFMU+GHvw0UIFnffP1qhurrN1qJV3BqaSRUjkDUgVV44T6zpw1Lc6u+yn0puDKHs+Sbw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-win32-arm64-msvc@15.1.0':
-    resolution: {integrity: sha512-WEAoHyG14t5sTavZa1c6BnOIEukll9iqFRTavqRVPfYmfegOAd5MaZfXgOGG6kGo1RduyGdTHD4+YZQSdsNZXg==}
+  '@next/swc-win32-arm64-msvc@15.1.3':
+    resolution: {integrity: sha512-6RxKjvnvVMM89giYGI1qye9ODsBQpHSHVo8vqA8xGhmRPZHDQUE4jcDbhBwK0GnFMqBnu+XMg3nYukNkmLOLWw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@next/swc-win32-x64-msvc@15.1.0':
-    resolution: {integrity: sha512-J1YdKuJv9xcixzXR24Dv+4SaDKc2jj31IVUEMdO5xJivMTXuE6MAdIi4qPjSymHuFG8O5wbfWKnhJUcHHpj5CA==}
+  '@next/swc-win32-x64-msvc@15.1.3':
+    resolution: {integrity: sha512-VId/f5blObG7IodwC5Grf+aYP0O8Saz1/aeU3YcWqNdIUAmFQY3VEPKPaIzfv32F/clvanOb2K2BR5DtDs6XyQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -1112,11 +1127,11 @@ packages:
       typescript:
         optional: true
 
-  '@tanstack/query-core@5.62.7':
-    resolution: {integrity: sha512-fgpfmwatsrUal6V+8EC2cxZIQVl9xvL7qYa03gsdsCy985UTUlS4N+/3hCzwR0PclYDqisca2AqR1BVgJGpUDA==}
+  '@tanstack/query-core@5.62.16':
+    resolution: {integrity: sha512-9Sgft7Qavcd+sN0V25xVyo0nfmcZXBuODy3FVG7BMWTg1HMLm8wwG5tNlLlmSic1u7l1v786oavn+STiFaPH2g==}
 
-  '@tanstack/react-query@5.62.7':
-    resolution: {integrity: sha512-+xCtP4UAFDTlRTYyEjLx0sRtWyr5GIk7TZjZwBu4YaNahi3Rt2oMyRqfpfVrtwsqY2sayP4iXVCwmC+ZqqFmuw==}
+  '@tanstack/react-query@5.62.16':
+    resolution: {integrity: sha512-XJIZNj65d2IdvU8VBESmrPakfIm6FSdHDzrS1dPrAwmq3ZX+9riMh/ZfbNQHAWnhrgmq7KoXpgZSRyXnqMYT9A==}
     peerDependencies:
       react: ^18 || ^19
 
@@ -1336,8 +1351,8 @@ packages:
     resolution: {integrity: sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==}
     engines: {node: '>= 6'}
 
-  caniuse-lite@1.0.30001684:
-    resolution: {integrity: sha512-G1LRwLIQjBQoyq0ZJGqGIJUXzJ8irpbjHLpVRXDvBEScFJ9b17sgK6vlx0GAJFE21okD7zXl08rRRUfq6HdoEQ==}
+  caniuse-lite@1.0.30001690:
+    resolution: {integrity: sha512-5ExiE3qQN6oF8Clf8ifIDcMRCRE/dMGcETG/XGMD8/XiXm6HXQgQTh1yZYLXXpSOsEUlJm1Xr7kGULZTuGtP/w==}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -1466,8 +1481,8 @@ packages:
     resolution: {integrity: sha512-HmA/NeewvHywhJ2ENXD3KvOuM/+K2dGLJfxVfIHsGwaqKICJnS+Ke2L6UcSrSrtMJLJaT0Im1Qv4TFXfaZShyw==}
     hasBin: true
 
-  drizzle-orm@0.38.2:
-    resolution: {integrity: sha512-eCE3yPRAskLo1WpM9OHpFaM70tBEDsWhwR/0M3CKyztAXKR9Qs3asZlcJOEliIcUSg8GuwrlY0dmYDgmm6y5GQ==}
+  drizzle-orm@0.38.3:
+    resolution: {integrity: sha512-w41Y+PquMpSff/QDRGdItG0/aWca+/J3Sda9PPGkTxBtjWQvgU1jxlFBXdjog5tYvTu58uvi3PwR1NuCx0KeZg==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=4'
@@ -2111,10 +2126,10 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
-  lucide-react@0.468.0:
-    resolution: {integrity: sha512-6koYRhnM2N0GGZIdXzSeiNwguv1gt/FAjZOiPl76roBi3xKEXa4WmfpxgQwTTL4KipXjefrnf3oV4IsYhi4JFA==}
+  lucide-react@0.469.0:
+    resolution: {integrity: sha512-28vvUnnKQ/dBwiCQtwJw7QauYnE7yd2Cyp4tTTJpvglX4EMpbflcdBgrgToX2j71B3YvugK/NH3BGUk+E/p/Fw==}
     peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
@@ -2176,8 +2191,8 @@ packages:
       zod:
         optional: true
 
-  next@15.1.0:
-    resolution: {integrity: sha512-QKhzt6Y8rgLNlj30izdMbxAwjHMFANnLwDwZ+WQh5sMhyt4lEBqDK9QpvWHtIM4rINKPoJ8aiRZKg5ULSybVHw==}
+  next@15.1.3:
+    resolution: {integrity: sha512-5igmb8N8AEhWDYzogcJvtcRDU6n4cMGtBklxKD4biYv4LXN8+awc/bbQ2IM2NQHdVPgJ6XumYXfo3hBtErg1DA==}
     engines: {node: ^18.18.0 || ^19.8.0 || >= 20.0.0}
     hasBin: true
     peerDependencies:
@@ -2358,8 +2373,8 @@ packages:
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
 
-  psl@1.14.0:
-    resolution: {integrity: sha512-Syk1bnf6fRZ9wQs03AtKJHcM12cKbOLo9L8JtCCdYj5/DTsHmTyXM4BK5ouWeG2P6kZ4nmFvuNTdtaqfobCOCg==}
+  psl@1.15.0:
+    resolution: {integrity: sha512-JZd3gMVBAVQkSs6HdNZo9Sdo0LNcQeMNP3CozBJb3JYC/QUYZTnKxP+f8oWRX4rHP5EurWxqAHTSwUCjlNKa1w==}
 
   punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
@@ -2599,8 +2614,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  tailwind-merge@2.5.5:
-    resolution: {integrity: sha512-0LXunzzAZzo0tEPxV3I297ffKZPlKDrjj7NXphC8V5ak9yHC5zRmxnOe2m/Rd/7ivsOMJe3JZ2JVocoDdQTRBA==}
+  tailwind-merge@2.6.0:
+    resolution: {integrity: sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==}
 
   tailwindcss-animate@1.0.7:
     resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
@@ -2759,8 +2774,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  valibot@1.0.0-beta.9:
-    resolution: {integrity: sha512-yEX8gMAZ2R1yI2uwOO4NCtVnJQx36zn3vD0omzzj9FhcoblvPukENIiRZXKZwCnqSeV80bMm8wNiGhQ0S8fiww==}
+  valibot@1.0.0-beta.10:
+    resolution: {integrity: sha512-nmo3nxvXRrxwDYZznK3aTgYv7ZA/SUZJ/s+pLY4Tqsex/fgwZ9XrrQ14jjozjUaeduQ9PhXHE2Xx1uMb0HePYw==}
     peerDependencies:
       typescript: '>=5'
     peerDependenciesMeta:
@@ -2832,7 +2847,7 @@ snapshots:
       '@atproto-labs/fetch': 0.1.2
       '@atproto-labs/pipe': 0.1.0
       ipaddr.js: 2.2.0
-      psl: 1.14.0
+      psl: 1.15.0
       undici: 6.21.0
 
   '@atproto-labs/fetch@0.1.2':
@@ -2847,7 +2862,20 @@ snapshots:
       '@atproto-labs/handle-resolver': 0.1.4
       '@atproto/did': 0.1.3
 
+  '@atproto-labs/handle-resolver-node@0.1.9':
+    dependencies:
+      '@atproto-labs/fetch-node': 0.1.4
+      '@atproto-labs/handle-resolver': 0.1.5
+      '@atproto/did': 0.1.3
+
   '@atproto-labs/handle-resolver@0.1.4':
+    dependencies:
+      '@atproto-labs/simple-store': 0.1.1
+      '@atproto-labs/simple-store-memory': 0.1.1
+      '@atproto/did': 0.1.3
+      zod: 3.24.1
+
+  '@atproto-labs/handle-resolver@0.1.5':
     dependencies:
       '@atproto-labs/simple-store': 0.1.1
       '@atproto-labs/simple-store-memory': 0.1.1
@@ -2860,6 +2888,12 @@ snapshots:
       '@atproto-labs/handle-resolver': 0.1.4
       '@atproto/syntax': 0.3.1
 
+  '@atproto-labs/identity-resolver@0.1.8':
+    dependencies:
+      '@atproto-labs/did-resolver': 0.1.6
+      '@atproto-labs/handle-resolver': 0.1.5
+      '@atproto/syntax': 0.3.1
+
   '@atproto-labs/pipe@0.1.0': {}
 
   '@atproto-labs/simple-store-memory@0.1.1':
@@ -2869,7 +2903,7 @@ snapshots:
 
   '@atproto-labs/simple-store@0.1.1': {}
 
-  '@atproto/api@0.13.20':
+  '@atproto/api@0.13.25':
     dependencies:
       '@atproto/common-web': 0.3.1
       '@atproto/lexicon': 0.4.4
@@ -2926,12 +2960,39 @@ snapshots:
       '@atproto/oauth-client': 0.3.4
       '@atproto/oauth-types': 0.2.1
 
+  '@atproto/oauth-client-node@0.2.5':
+    dependencies:
+      '@atproto-labs/did-resolver': 0.1.6
+      '@atproto-labs/handle-resolver-node': 0.1.9
+      '@atproto-labs/simple-store': 0.1.1
+      '@atproto/did': 0.1.3
+      '@atproto/jwk': 0.1.1
+      '@atproto/jwk-jose': 0.1.2
+      '@atproto/jwk-webcrypto': 0.1.2
+      '@atproto/oauth-client': 0.3.5
+      '@atproto/oauth-types': 0.2.1
+
   '@atproto/oauth-client@0.3.4':
     dependencies:
       '@atproto-labs/did-resolver': 0.1.6
       '@atproto-labs/fetch': 0.1.2
       '@atproto-labs/handle-resolver': 0.1.4
       '@atproto-labs/identity-resolver': 0.1.7
+      '@atproto-labs/simple-store': 0.1.1
+      '@atproto-labs/simple-store-memory': 0.1.1
+      '@atproto/did': 0.1.3
+      '@atproto/jwk': 0.1.1
+      '@atproto/oauth-types': 0.2.1
+      '@atproto/xrpc': 0.6.5
+      multiformats: 9.9.0
+      zod: 3.24.1
+
+  '@atproto/oauth-client@0.3.5':
+    dependencies:
+      '@atproto-labs/did-resolver': 0.1.6
+      '@atproto-labs/fetch': 0.1.2
+      '@atproto-labs/handle-resolver': 0.1.5
+      '@atproto-labs/identity-resolver': 0.1.8
       '@atproto-labs/simple-store': 0.1.1
       '@atproto-labs/simple-store-memory': 0.1.1
       '@atproto/did': 0.1.3
@@ -3200,7 +3261,7 @@ snapshots:
 
   '@eslint/js@8.57.1': {}
 
-  '@hookform/resolvers@3.9.1(react-hook-form@7.54.2(react@19.0.0))':
+  '@hookform/resolvers@3.10.0(react-hook-form@7.54.2(react@19.0.0))':
     dependencies:
       react-hook-form: 7.54.2(react@19.0.0)
 
@@ -3317,43 +3378,43 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@next-safe-action/adapter-react-hook-form@1.0.13(@hookform/resolvers@3.9.1(react-hook-form@7.54.2(react@19.0.0)))(next-safe-action@7.10.2(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(valibot@1.0.0-beta.9(typescript@5.7.2))(zod@3.24.1))(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react-hook-form@7.54.2(react@19.0.0))(react@19.0.0)':
+  '@next-safe-action/adapter-react-hook-form@1.0.13(@hookform/resolvers@3.10.0(react-hook-form@7.54.2(react@19.0.0)))(next-safe-action@7.10.2(next@15.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(valibot@1.0.0-beta.10(typescript@5.7.2))(zod@3.24.1))(next@15.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react-hook-form@7.54.2(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@hookform/resolvers': 3.9.1(react-hook-form@7.54.2(react@19.0.0))
-      next: 15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      next-safe-action: 7.10.2(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(valibot@1.0.0-beta.9(typescript@5.7.2))(zod@3.24.1)
+      '@hookform/resolvers': 3.10.0(react-hook-form@7.54.2(react@19.0.0))
+      next: 15.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      next-safe-action: 7.10.2(next@15.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(valibot@1.0.0-beta.10(typescript@5.7.2))(zod@3.24.1)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
       react-hook-form: 7.54.2(react@19.0.0)
 
-  '@next/env@15.1.0': {}
+  '@next/env@15.1.3': {}
 
   '@next/eslint-plugin-next@15.1.0':
     dependencies:
       fast-glob: 3.3.1
 
-  '@next/swc-darwin-arm64@15.1.0':
+  '@next/swc-darwin-arm64@15.1.3':
     optional: true
 
-  '@next/swc-darwin-x64@15.1.0':
+  '@next/swc-darwin-x64@15.1.3':
     optional: true
 
-  '@next/swc-linux-arm64-gnu@15.1.0':
+  '@next/swc-linux-arm64-gnu@15.1.3':
     optional: true
 
-  '@next/swc-linux-arm64-musl@15.1.0':
+  '@next/swc-linux-arm64-musl@15.1.3':
     optional: true
 
-  '@next/swc-linux-x64-gnu@15.1.0':
+  '@next/swc-linux-x64-gnu@15.1.3':
     optional: true
 
-  '@next/swc-linux-x64-musl@15.1.0':
+  '@next/swc-linux-x64-musl@15.1.3':
     optional: true
 
-  '@next/swc-win32-arm64-msvc@15.1.0':
+  '@next/swc-win32-arm64-msvc@15.1.3':
     optional: true
 
-  '@next/swc-win32-x64-msvc@15.1.0':
+  '@next/swc-win32-x64-msvc@15.1.3':
     optional: true
 
   '@nodelib/fs.scandir@2.1.5':
@@ -3540,11 +3601,11 @@ snapshots:
     optionalDependencies:
       typescript: 5.7.2
 
-  '@tanstack/query-core@5.62.7': {}
+  '@tanstack/query-core@5.62.16': {}
 
-  '@tanstack/react-query@5.62.7(react@19.0.0)':
+  '@tanstack/react-query@5.62.16(react@19.0.0)':
     dependencies:
-      '@tanstack/query-core': 5.62.7
+      '@tanstack/query-core': 5.62.16
       react: 19.0.0
 
   '@types/json5@0.0.29': {}
@@ -3800,7 +3861,7 @@ snapshots:
 
   camelcase-css@2.0.1: {}
 
-  caniuse-lite@1.0.30001684: {}
+  caniuse-lite@1.0.30001690: {}
 
   chalk@4.1.2:
     dependencies:
@@ -3931,7 +3992,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.38.2(@types/react@18.3.12)(postgres@3.4.5)(react@19.0.0):
+  drizzle-orm@0.38.3(@types/react@18.3.12)(postgres@3.4.5)(react@19.0.0):
     optionalDependencies:
       '@types/react': 18.3.12
       postgres: 3.4.5
@@ -4702,7 +4763,7 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
-  lucide-react@0.468.0(react@19.0.0):
+  lucide-react@0.469.0(react@19.0.0):
     dependencies:
       react: 19.0.0
 
@@ -4739,35 +4800,35 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next-safe-action@7.10.2(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(valibot@1.0.0-beta.9(typescript@5.7.2))(zod@3.24.1):
+  next-safe-action@7.10.2(next@15.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(valibot@1.0.0-beta.10(typescript@5.7.2))(zod@3.24.1):
     dependencies:
-      next: 15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      next: 15.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     optionalDependencies:
-      valibot: 1.0.0-beta.9(typescript@5.7.2)
+      valibot: 1.0.0-beta.10(typescript@5.7.2)
       zod: 3.24.1
 
-  next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  next@15.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
-      '@next/env': 15.1.0
+      '@next/env': 15.1.3
       '@swc/counter': 0.1.3
       '@swc/helpers': 0.5.15
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001684
+      caniuse-lite: 1.0.30001690
       postcss: 8.4.31
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
       styled-jsx: 5.1.6(react@19.0.0)
     optionalDependencies:
-      '@next/swc-darwin-arm64': 15.1.0
-      '@next/swc-darwin-x64': 15.1.0
-      '@next/swc-linux-arm64-gnu': 15.1.0
-      '@next/swc-linux-arm64-musl': 15.1.0
-      '@next/swc-linux-x64-gnu': 15.1.0
-      '@next/swc-linux-x64-musl': 15.1.0
-      '@next/swc-win32-arm64-msvc': 15.1.0
-      '@next/swc-win32-x64-msvc': 15.1.0
+      '@next/swc-darwin-arm64': 15.1.3
+      '@next/swc-darwin-x64': 15.1.3
+      '@next/swc-linux-arm64-gnu': 15.1.3
+      '@next/swc-linux-arm64-musl': 15.1.3
+      '@next/swc-linux-x64-gnu': 15.1.3
+      '@next/swc-linux-x64-musl': 15.1.3
+      '@next/swc-win32-arm64-msvc': 15.1.3
+      '@next/swc-win32-x64-msvc': 15.1.3
       sharp: 0.33.5
     transitivePeerDependencies:
       - '@babel/core'
@@ -4920,7 +4981,7 @@ snapshots:
       object-assign: 4.1.1
       react-is: 16.13.1
 
-  psl@1.14.0:
+  psl@1.15.0:
     dependencies:
       punycode: 2.3.1
 
@@ -5204,7 +5265,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  tailwind-merge@2.5.5: {}
+  tailwind-merge@2.6.0: {}
 
   tailwindcss-animate@1.0.7(tailwindcss@3.4.15):
     dependencies:
@@ -5383,7 +5444,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  valibot@1.0.0-beta.9(typescript@5.7.2):
+  valibot@1.0.0-beta.10(typescript@5.7.2):
     optionalDependencies:
       typescript: 5.7.2
 
